@@ -1,0 +1,75 @@
+# Site Web - Notre Hôtel
+# Configuration du serveur
+
+# Activer la compression GZIP
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Cache du navigateur (1 an pour les assets statiques)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+    ExpiresByType font/truetype "access plus 1 year"
+    ExpiresByType font/opentype "access plus 1 year"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
+
+# Redirection HTTPS
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Désactiver les index de répertoires
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# Sécurité - Désactiver l'exécution de scripts dans certains dossiers
+<Directory /images>
+    <FilesMatch "\.(php|php3|php4|php5|php6|shtml|phtml|phar|pht)$">
+        Deny from all
+    </FilesMatch>
+</Directory>
+
+# En-têtes de sécurité
+<IfModule mod_headers.c>
+    # Empêcher le clic-jacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Prévenir la détection du type MIME
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Activer XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Référrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Réduction du temps de réponse
+AddType text/html .html
+DeflateFilterNote Input insize
+DeflateFilterNote Output outsize
+DeflateFilterNote Ratio ratio
+
+LogFormat '"%r" %{outsize}n/%{insize}n (%{ratio}n%%)' deflate
+CustomLog logs/deflate_log deflate

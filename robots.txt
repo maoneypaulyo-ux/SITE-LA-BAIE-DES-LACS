@@ -1,0 +1,24 @@
+# robots.txt - Directives pour les moteurs de recherche
+# Cette page permet aux moteurs de recherche (Google, Bing, etc.) 
+# d'explorer votre site efficacement
+
+# Autorisez tous les robots
+User-agent: *
+Allow: /
+
+# Désactiver l'exploration de certains chemins (si nécessaire)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap
+Sitemap: https://yourhotel.com/sitemap.xml
+
+# Directives de crawl-delay (optionnel)
+# Crawl-delay: 1
+
+# Désactiver pour certains bots (si nécessaire)
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /

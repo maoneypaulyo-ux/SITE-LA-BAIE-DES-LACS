@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hôtel moderne et confortable - Bienvenue">
+    <title>LA BAIE DES LACS - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1> LA BAIE DES LACS</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="pages/about.html" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="pages/rooms.html" data-fr="Chambres" data-en="Rooms">Chambres</a></li>
+                <li><a href="pages/services.html" data-fr="Services" data-en="Services">Services</a></li>
+                <li><a href="pages/gallery.html" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+                <li><a href="pages/contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="langToggle" class="lang-btn">EN</button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2 data-fr="Bienvenue à Notre Hôtel" data-en="Welcome to Our Hotel">Bienvenue à Notre Hôtel</h2>
+            <p data-fr="Confort, qualité et hospitalité" data-en="Comfort, quality and hospitality">Confort, qualité et hospitalité</p>
+            <div class="hero-buttons">
+                <a href="pages/rooms.html" class="btn btn-primary" data-fr="Voir nos chambres" data-en="View our rooms">Voir nos chambres</a>
+                <a href="pages/contact.html" class="btn btn-secondary" data-fr="Réserver maintenant" data-en="Book now">Réserver maintenant</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/logo.png" alt="LA BAIE DES LACS" class="hotel-logo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22400%22%3E%3Crect fill=%22%23ddd%22 width=%22800%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23999%22%3ELogo de l%27hôtel%3C/text%3E%3C/svg%3E'">
+        </div>
+    </section>
+
+
+    <section class="highlights">
+        <div class="container">
+            <h2 data-fr="Nos Services" data-en="Our Services">Nos Services</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3 data-fr="WiFi Gratuit" data-en="Free WiFi">WiFi Gratuit</h3>
+                    <p data-fr="Connexion rapide dans toutes les chambres" data-en="Fast connection in all rooms">Connexion rapide dans toutes les chambres</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-bed"></i>
+                    <h3 data-fr="Confort" data-en="Comfort">Confort</h3>
+                    <p data-fr="Chambres spacieuses et bien équipées" data-en="Spacious and well-equipped rooms">Chambres spacieuses et bien équipées</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3 data-fr="Restaurant" data-en="Restaurant">Restaurant</h3>
+                    <p data-fr="Cuisine délicieuse et service attentif" data-en="Delicious food and attentive service">Cuisine délicieuse et service attentif</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3 data-fr="Service 24/7" data-en="24/7 Service">Service 24/7</h3>
+                    <p data-fr="Assistance disponible à tout moment" data-en="Assistance available anytime">Assistance disponible à tout moment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="cta-section">
+        <div class="container">
+            <h2 data-fr="Prêt à réserver ?" data-en="Ready to book?">Prêt à réserver ?</h2>
+            <p data-fr="Contactez-nous dès maintenant pour vos réservations" data-en="Contact us now for your reservations">Contactez-nous dès maintenant pour vos réservations</p>
+            <div class="cta-buttons">
+                <!-- À REMPLIR: Remplacez VOTRE_NUMERO_WHATSAPP par votre numéro WhatsApp (format: +XXXxxxxxxxxxx) -->
+                <a href="https://wa.me/VOTRE_NUMERO_WHATSAPP" class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="pages/contact.html" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> <span data-fr="E-mail" data-en="Email">E-mail</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-fr="LA BAIE DES LACS" data-en="LA BAIE DES LACS">LA BAIE DES LACS</h3>
+                    <p data-fr="Votre destination idéale pour un séjour agréable" data-en="Your ideal destination for a pleasant stay">Votre destination idéale pour un séjour agréable</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-fr="Liens" data-en="Links">Liens</h3>
+                    <ul>
+                        <li><a href="pages/about.html" data-fr="À propos" data-en="About">À propos</a></li>
+                        <li><a href="pages/rooms.html" data-fr="Chambres" data-en="Rooms">Chambres</a></li>
+                        <li><a href="pages/services.html" data-fr="Services" data-en="Services">Services</a></li>
+                        <li><a href="pages/contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-fr="Contact" data-en="Contact">Contact</h3>
+                    <p>
+                        <!-- À REMPLIR: Remplacez par votre adresse -->
+                        <i class="fas fa-map-marker-alt"></i> <span data-fr="Adresse: VOTRE_ADRESSE" data-en="Address: YOUR_ADDRESS">Adresse: VOTRE_ADRESSE</span><br>
+                        <!-- À REMPLIR: Remplacez par votre numéro de téléphone -->
+                        <i class="fas fa-phone"></i> <a href="tel:+VOTRE_NUMERO" data-fr="Téléphone" data-en="Phone">+VOTRE_NUMERO</a><br>
+                        <!-- À REMPLIR: Remplacez par votre email -->
+                        <i class="fas fa-envelope"></i> <a href="mailto:VOTRE_EMAIL@DOMAINE.COM">VOTRE_EMAIL@DOMAINE.COM</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-fr="VOTRE_NOM_HOTEL" data-en="VOTRE_NOM_HOTEL">VOTRE_NOM_HOTEL</span> - <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+            </div>LA BAIE DES LACS
+        </div>
+    </footer>
+
+    <!-- À REMPLIR: Remplacez VOTRE_NUMERO_WHATSAPP par votre numéro WhatsApp (format: +XXXxxxxxxxxxx) -->
+    <a href="https://wa.me/VOTRE_NUMERO_WHATSAPP" class="whatsapp-float" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

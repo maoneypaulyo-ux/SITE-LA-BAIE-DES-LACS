@@ -1,0 +1,104 @@
+{
+  "hotel": {
+    "name": "LA BAIE DES LACS",
+    "description": "Remplacez par la description de votre hôtel",
+    "address": "VOTRE_ADRESSE_COMPLETE",
+    "phone": "+VOTRE_NUMERO_TELEPHONE",
+    "phone_whatsapp": "VOTRE_NUMERO_WHATSAPP",
+    "email": "VOTRE_EMAIL@DOMAINE.COM",
+    "website": "https://VOTRE_DOMAINE.COM",
+    "hours": {
+      "weekday": "24h/24",
+      "weekend": "24h/24"
+    }
+  },
+  "rooms": [
+    {
+      "id": 1,
+      "name_fr": "Chambre Simple",
+      "name_en": "Simple Room",
+      "description_fr": "Chambre confortable pour 1-2 personnes",
+      "description_en": "Comfortable room for 1-2 people",
+      "price": 50,
+      "currency": "€",
+      "image": "room1.jpg",
+      "amenities_fr": ["Lit simple ou double", "Salle de bain privée", "Climatisation", "Télévision", "WiFi gratuit"],
+      "amenities_en": ["Single or double bed", "Private bathroom", "Air conditioning", "Television", "Free WiFi"]
+    },
+    {
+      "id": 2,
+      "name_fr": "Chambre Double",
+      "name_en": "Double Room",
+      "description_fr": "Chambre spacieuse pour 2 personnes",
+      "description_en": "Spacious room for 2 people",
+      "price": 75,
+      "currency": "€",
+      "image": "room2.jpg",
+      "amenities_fr": ["Lit king size", "Salle de bain spacieuse", "Climatisation", "Télévision HD", "WiFi gratuit"],
+      "amenities_en": ["King size bed", "Spacious bathroom", "Air conditioning", "HD Television", "Free WiFi"]
+    },
+    {
+      "id": 3,
+      "name_fr": "Suite Premium",
+      "name_en": "Premium Suite",
+      "description_fr": "Suite de luxe avec salon séparé",
+      "description_en": "Luxury suite with separate lounge",
+      "price": 120,
+      "currency": "€",
+      "image": "room3.jpg",
+      "amenities_fr": ["Salon séparé", "Chambre spacieuse", "Salle de bain luxueuse", "Climatisation", "WiFi gratuit"],
+      "amenities_en": ["Separate lounge", "Spacious bedroom", "Luxurious bathroom", "Air conditioning", "Free WiFi"]
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name_fr": "WiFi Gratuit",
+      "name_en": "Free WiFi",
+      "icon": "fa-wifi"
+    },
+    {
+      "id": 2,
+      "name_fr": "Restaurant & Bar",
+      "name_en": "Restaurant & Bar",
+      "icon": "fa-utensils"
+    },
+    {
+      "id": 3,
+      "name_fr": "Réception 24/7",
+      "name_en": "24/7 Reception",
+      "icon": "fa-concierge-bell"
+    },
+    {
+      "id": 4,
+      "name_fr": "Jardin & Terrasse",
+      "name_en": "Garden & Terrace",
+      "icon": "fa-tree"
+    },
+    {
+      "id": 5,
+      "name_fr": "Parking Gratuit",
+      "name_en": "Free Parking",
+      "icon": "fa-car"
+    },
+    {
+      "id": 6,
+      "name_fr": "Piscine",
+      "name_en": "Swimming Pool",
+      "icon": "fa-swimming-pool"
+    }
+  ],
+  "social": {
+    "facebook": "https://facebook.com/yourhotel",
+    "instagram": "https://instagram.com/yourhotel",
+    "twitter": "https://twitter.com/yourhotel",
+    "youtube": "https://youtube.com/@yourhotel"
+  },
+  "seo": {
+    "keywords_fr": "hôtel, réservation, chambres, séjour",
+    "keywords_en": "hotel, booking, rooms, stay",
+    "description_fr": "Notre hôtel offre confort et qualité pour votre séjour",
+    "description_en": "Our hotel offers comfort and quality for your stay"
+  },
+  "ga_tracking_id": "UA-XXXXXXXXX-X"
+}

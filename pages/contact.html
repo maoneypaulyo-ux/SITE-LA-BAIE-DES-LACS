@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez-nous - LA BAIE DES LACS">
+    <title>Contact - LA BAIE DES LACS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1> LA BAIE DES LACS</h1>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="about.html" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="rooms.html" data-fr="Chambres" data-en="Rooms">Chambres</a></li>
+                <li><a href="services.html" data-fr="Services" data-en="Services">Services</a></li>
+                <li><a href="gallery.html" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+                <li><a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="langToggle" class="lang-btn">EN</button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="page-header">
+        <div class="container">
+            <h1 data-fr="Nous Contacter" data-en="Contact Us">Nous Contacter</h1>
+            <p data-fr="LA BAIE DES LACS - Nous vous répondrons rapidement" data-en="LA BAIE DES LACS - We will respond quickly">Nous vous répondrons rapidement</p>
+        </div>
+    </section>
+
+    
+    <section class="page-content">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px;">
+        
+                <div>
+                    <h2 data-fr="Formulaire de Contact" data-en="Contact Form">Formulaire de Contact</h2>
+                    <form onsubmit="handleContactForm(event); return false;" style="margin-top: 30px;">
+                        <div class="form-group">
+                            <label data-fr="Nom" data-en="Name">Nom</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-fr="E-mail" data-en="Email">E-mail</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-fr="Téléphone" data-en="Phone">Téléphone</label>
+                            <input type="tel" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label data-fr="Objet" data-en="Subject">Objet</label>
+                            <select name="subject">
+                                <option data-fr="Réservation" data-en="Booking">Réservation</option>
+                                <option data-fr="Information légale" data-en="Legal information">Information légale</option>
+                                <option data-fr="Réclamation" data-en="Complaint">Réclamation</option>
+                                <option data-fr="Autre" data-en="Other">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-fr="Message" data-en="Message">Message</label>
+                            <textarea name="message" required data-fr="Votre message ici..." data-en="Your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-fr="Envoyer" data-en="Send">Envoyer</button>
+                    </form>
+                </div>
+
+                <div>
+                    <h2 data-fr="Informations de Contact" data-en="Contact Information">Informations de Contact</h2>
+
+
+                    <div style="margin-top: 30px; padding: 20px; background: var(--light-bg); border-radius: 8px; margin-bottom: 20px;">
+                        <h3 style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--accent-color); font-size: 1.5rem;"></i>
+                            <span data-fr="Adresse" data-en="Address">Adresse</span>
+                        </h3>
+                        <p style="margin-top: 10px; color: var(--light-text);">
+                            LA BAIE DES LACS<br>
+                            <!-- À REMPLIR: Remplacez par votre adresse complète -->
+                            VOTRE_ADRESSE<br>
+                            VOTRE_VILLE_PAYS
+                        </p>
+                    </div>
+
+                    <div style="margin-top: 20px; padding: 20px; background: var(--light-bg); border-radius: 8px; margin-bottom: 20px;">
+                        <h3 style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-phone" style="color: var(--accent-color); font-size: 1.5rem;"></i>
+                            <span data-fr="Téléphone" data-en="Phone">Téléphone</span>
+                        </h3>
+                        <p style="margin-top: 10px;">
+                            <!-- À REMPLIR: Remplacez par votre numéro de téléphone -->
+                            <a href="tel:+VOTRE_NUMERO_TELEPHONE" style="color: var(--accent-color); text-decoration: none;">+VOTRE_NUMERO_TELEPHONE</a><br>
+                            <small style="color: var(--light-text);" data-fr="Horaires d'ouverture" data-en="Opening hours">Horaires d'ouverture</small>
+                        </p>
+                    </div>
+
+                
+                    
+                    <div style="margin-top: 20px; padding: 20px; background: var(--light-bg); border-radius: 8px; margin-bottom: 20px;">
+                        <h3 style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-envelope" style="color: var(--accent-color); font-size: 1.5rem;"></i>
+                            <span data-fr="E-mail" data-en="Email">E-mail</span>
+                        </h3>
+                        <p style="margin-top: 10px;">
+                            <!-- À REMPLIR: Remplacez par votre adresse email -->
+                            <a href="mailto:VOTRE_EMAIL@DOMAINE.COM" style="color: var(--accent-color); text-decoration: none;">VOTRE_EMAIL@DOMAINE.COM</a><br>
+                            <small style="color: var(--light-text);" data-fr="Réponse rapide" data-en="Quick response">Réponse rapide</small>
+                        </p>
+                    </div>
+
+                    
+                    <div style="margin-top: 20px; padding: 20px; background: var(--success); border-radius: 8px; color: white;">
+                        <h3 style="display: flex; align-items: center; gap: 10px;">
+                            <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
+                            <span>WhatsApp</span>
+                        </h3>
+                        <p style="margin-top: 10px;">
+                            <!-- À REMPLIR: Remplacez VOTRE_NUMERO_WHATSAPP par votre numéro (format: +XXXxxxxxxxxxx) -->
+                            <a href="https://wa.me/VOTRE_NUMERO_WHATSAPP" target="_blank" style="color: white; text-decoration: none;">
+                                <span data-fr="Cliquez pour discuter" data-en="Click to chat">Cliquez pour discuter</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div style="margin-top: 40px;">
+                <h2 data-fr="Localisation" data-en="Location">Localisation</h2>
+                <div style="width: 100%; height: 500px; border-radius: 8px; overflow: hidden; margin-top: 20px; background: var(--light-bg);">
+                    <!-- À REMPLIR: Remplacez le code d'intégration Google Maps ci-dessous -->
+                    <!-- Instructions: Allez sur https://maps.google.com, cherchez votre adresse,
+                         cliquez "Partager" > "Intégrer une carte", et remplacez le src de l'iframe -->
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        style="border:0" 
+                        src="https://www.google.com/maps/embed?pb=VOTRE_CODE_GOOGLE_MAPS" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <!-- À REMPLIR: Remplacez par vos informations -->
+                <p style="margin-top: 15px; color: var(--light-text); font-size: 0.9rem;">VOTRE_NOM_HOTEL - VOTRE_ADRESSE_COMPLETE</p>
+            </div>LA BAIE DES LACS
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <!-- À REMPLIR: Remplacez par le nom de votre hôtel -->
+                    <h3 data-fr="LA BAIE DES LACS" data-en="LA BAIE DES LACS">LA BAIE DES LACS</h3>
+                    <p data-fr="Votre destination idéale pour un séjour agréable" data-en="Your ideal destination for a pleasant stay">Votre destination idéale pour un séjour agréabl
+                <div class="footer-section">
+                    <h3 data-fr="Liens" data-en="Links">Liens</h3>
+                    <ul>
+                        <li><a href="about.html" data-fr="À propos" data-en="About">À propos</a></li>
+                        <li><a href="rooms.html" data-fr="Chambres" data-en="Rooms">Chambres</a></li>
+                        <li><a href="services.html" data-fr="Services" data-en="Services">Services</a></li>
+                        <li><a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 data-fr="Contact" data-en="Contact">Contact</h3>
+                    <p>
+                        <!-- À REMPLIR: Remplacez par votre adresse -->
+                        <i class="fas fa-map-marker-alt"></i> <span data-fr="Adresse: VOTRE_ADRESSE" data-en="Address: YOUR_ADDRESS">Adresse: VOTRE_ADRESSE</span><br>
+                        <!-- À REMPLIR: Remplacez par votre numéro de téléphone -->
+                        <i class="fas fa-phone"></i> <a href="tel:+VOTRE_NUMERO" data-fr="Téléphone" data-en="Phone">+VOTRE_NUMERO</a><br>
+                        <!-- À REMPLIR: Remplacez par votre email -->
+                        <i class="fas fa-envelope"></i> <a href="mailto:VOTRE_EMAIL@DOMAINE.COM">VOTRE_EMAIL@DOMAINE.COM</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-fr="VOTRE_NOM_HOTEL" data-en="VOTRE_NOM_HOTEL">VOTRE_NOM_HOTEL</span> - <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+            </div>
+        </div>LA BAIE DES LACS
+    </footer>
+
+    
+    <!-- À REMPLIR: Remplacez VOTRE_NUMERO_WHATSAPP par votre numéro WhatsApp (format: +XXXxxxxxxxxxx) -->
+    <a href="https://wa.me/VOTRE_NUMERO_WHATSAPP" class="whatsapp-float" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
