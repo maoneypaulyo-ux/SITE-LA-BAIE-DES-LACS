@@ -1,8 +1,8 @@
-# 📝 CHANGELOG - Historique des modifications
+#  CHANGELOG - Historique des modifications
 
 ## Version 1.0 - Lancement initial (15 Janvier 2024)
 
-### ✨ Features
+###  Features
 - [x] Site web complet pour hôtel
 - [x] 6 pages principales (Accueil, À propos, Chambres, Services, Galerie, Contact)
 - [x] Support multilingue FR/EN
@@ -12,7 +12,7 @@
 - [x] Bouton WhatsApp flottant
 - [x] Système d'icônes (Font Awesome)
 
-### 🎨 Design
+###  Design
 - [x] Palette de couleurs moderne (bleu/mauve)
 - [x] Navigation sticky
 - [x] Menu hamburger mobile
@@ -20,14 +20,14 @@
 - [x] Footer complet avec liens
 - [x] Gallerie photos responsive
 
-### 📱 Performance
+###  Performance
 - [x] Chargement rapide (< 2s)
 - [x] Optimisé pour mobile
 - [x] Images lazy-loading
 - [x] CSS et JS minifiés
 - [x] Configuration cache navigateur
 
-### 🔒 Sécurité
+###  Sécurité
 - [x] Fichier .htaccess (sécurité serveur)
 - [x] En-têtes de sécurité HTTP
 - [x] Protection contre les accès non autorisés
