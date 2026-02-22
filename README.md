@@ -304,7 +304,7 @@ Ajoutez 9 photos de votre hôtel (gallery1.jpg à gallery9.jpg dans `/images/`)
 
 ---
 
-## 📱 Fonctionnalités principales
+##  Fonctionnalités principales
 
 ###  Responsive Design
 - Adapté automatiquement à tous les écrans (mobile, tablette, desktop)
